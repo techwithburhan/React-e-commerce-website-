@@ -27,207 +27,247 @@ furnistyle-ecommerce/
 └── README.md
 ```
 
-## Prerequisites
+# Docker Setup Guide for FurniStyle E-Commerce App
 
-Before starting, make sure you have:
-- **Node.js** (version 14 or higher) - Download from https://nodejs.org
-- **npm** (comes with Node.js)
-- A code editor like **VS Code**
+## 📋 Prerequisites
+- Docker installed on your machine ([Download Docker](https://www.docker.com/products/docker-desktop))
+- Docker running in the background
 
-Check your installation:
+---
+
+## 🚀 Quick Start - Running Steps
+
+### Step 1: Navigate to Your Project
 ```bash
-node --version
-npm --version
+cd /path/to/furnistyle-ecommerce
 ```
 
-## Complete Installation Steps
+### Step 2: Create the Nginx Configuration File
+Create a file named `nginx.conf` in your project root with the nginx configuration provided.
 
-### Step 1: Create React App
-
-Open your terminal/command prompt and run:
-
+### Step 3: Build Docker Image
 ```bash
-npx create-react-app furnistyle-ecommerce
-cd furnistyle-ecommerce
+docker build -t furnistyle-ecommerce:1.0 .
 ```
 
-### Step 2: Install Required Packages
+**Explanation:**
+- `docker build` - Builds a Docker image from Dockerfile
+- `-t furnistyle-ecommerce:1.0` - Tags the image with name and version
+- `.` - Uses Dockerfile from current directory
 
+### Step 4: Run Docker Container
 ```bash
-npm install react-router-dom lucide-react
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+docker run -d -p 3000:80 --name furnistyle-app furnistyle-ecommerce:1.0
 ```
 
-**Packages Installed:**
-- `react-router-dom` - For routing/navigation between pages
-- `lucide-react` - For beautiful icons
-- `tailwindcss` - For styling
-- `postcss` & `autoprefixer` - Tailwind CSS dependencies
+**Explanation:**
+- `docker run` - Creates and starts a container
+- `-d` - Runs in detached mode (background)
+- `-p 3000:80` - Maps port 3000 (localhost) to port 80 (container)
+- `--name furnistyle-app` - Names the container
+- `furnistyle-ecommerce:1.0` - Image to use
 
-### Step 3: Configure Tailwind CSS
-
-Replace the content of `tailwind.config.js`:
-
-```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+### Step 5: Access Your App
+Open your browser and go to:
+```
+http://localhost:3000
 ```
 
-### Step 4: Update CSS File
+---
 
-Replace all content in `src/index.css` with:
+## 🛑 Useful Docker Commands
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### Step 5: Create Project Folders
-
-Create the following folder structure inside `src/`:
-
+### View Running Containers
 ```bash
-# In the src folder, create:
-mkdir components pages data
+docker ps
 ```
 
-### Step 6: Create All Files
-
-Now create each file with the content provided in the separate artifacts:
-
-**Components:**
-1. `src/components/Navigation.js`
-2. `src/components/Footer.js`
-
-**Pages:**
-3. `src/pages/HomePage.js`
-4. `src/pages/ProductsPage.js`
-5. `src/pages/ProductDetailPage.js`
-6. `src/pages/CartPage.js`
-7. `src/pages/CheckoutPage.js`
-8. `src/pages/ContactPage.js`
-
-**Data:**
-9. `src/data/products.js`
-
-**Main Files:**
-10. `src/App.js`
-11. `src/index.js`
-
-### Step 7: Run the Project
-
-After creating all files, start the development server:
-
+### View All Containers (including stopped)
 ```bash
-npm start
+docker ps -a
 ```
 
-The application will automatically open at `http://localhost:3000`
-
-### Step 8: Build for Production
-
-When ready to deploy:
-
+### Stop Container
 ```bash
-npm run build
+docker stop furnistyle-app
 ```
 
-This creates an optimized production build in the `build/` folder.
-
-## File Structure Explanation
-
-- **components/** - Reusable UI components (Navigation, Footer)
-- **pages/** - Different pages of the website
-- **data/** - Product data and static content
-- **App.js** - Main app with routing configuration
-- **index.js** - Entry point of React app
-- **index.css** - Global styles with Tailwind
-
-## Features Included
-
-✅ Home page with auto-sliding banner
-✅ Products page with grid layout
-✅ Product detail page with color/size selection
-✅ Shopping cart functionality
-✅ Checkout/payment page
-✅ Contact us page
-✅ Responsive design (mobile, tablet, desktop)
-✅ Dark navigation bar (#13120A)
-✅ Smooth animations and hover effects
-
-## Common Issues & Solutions
-
-**Issue: Module not found error**
+### Start Container Again
 ```bash
-npm install
+docker start furnistyle-app
 ```
 
-**Issue: Tailwind styles not working**
-- Make sure `tailwind.config.js` is configured correctly
-- Restart the development server (`npm start`)
-
-**Issue: React Router not working**
+### Remove Container
 ```bash
-npm install react-router-dom
+docker rm furnistyle-app
 ```
 
-**Issue: Port 3000 already in use**
-- Either close the app using port 3000
-- Or run on a different port: `PORT=3001 npm start`
-
-## Package.json Should Look Like This
-
-```json
-{
-  "name": "furnistyle-ecommerce",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
-    "react-scripts": "5.0.1",
-    "lucide-react": "^0.263.1"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.35",
-    "autoprefixer": "^10.4.17"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
-}
+### View Container Logs
+```bash
+docker logs furnistyle-app
 ```
 
-## Next Steps
+### View Real-time Logs
+```bash
+docker logs -f furnistyle-app
+```
 
-1. Customize the colors and styles in `tailwind.config.js`
-2. Add your own product images and data in `src/data/products.js`
-3. Connect to a real backend API
-4. Add user authentication
-5. Integrate real payment gateway (Stripe, PayPal)
-6. Deploy to Netlify, Vercel, or your hosting provider
+### Remove Image
+```bash
+docker rmi furnistyle-ecommerce:1.0
+```
 
-## Deployment
+---
 
-**For Netlify/Vercel:**
-1. Push code to GitHub
-2. Connect your repository
-3. Build command: `npm run build`
-4. Publish directory: `build`
+## 📊 Docker Explanation
 
-Enjoy building your e-commerce website! 🚀
+### What is Docker?
+Docker is a containerization platform that packages your entire application with all dependencies into a single unit called a "container". Think of it as a lightweight virtual machine.
+
+### Why Use Docker?
+
+| Benefit | Explanation |
+|---------|-------------|
+| **Consistency** | Works the same on laptop, server, or cloud |
+| **Isolation** | App dependencies don't conflict with system |
+| **Easy Deployment** | Just run the container anywhere |
+| **Scalability** | Run multiple containers easily |
+| **Lightweight** | Uses less resources than VMs |
+
+### Our Dockerfile Breakdown
+
+```dockerfile
+FROM node:18-alpine AS builder
+```
+- Uses Node.js 18 with Alpine Linux (lightweight, ~150MB)
+- `AS builder` creates a build stage name
+
+```dockerfile
+WORKDIR /app
+```
+- Sets working directory inside container to `/app`
+
+```dockerfile
+COPY package*.json ./
+```
+- Copies `package.json` and `package-lock.json` (if exists)
+- `*` is a wildcard pattern
+
+```dockerfile
+RUN npm install
+```
+- Installs all npm dependencies inside container
+
+```dockerfile
+COPY . .
+```
+- Copies entire project source code
+
+```dockerfile
+RUN npm run build
+```
+- Creates optimized production build in `/app/build` folder
+
+```dockerfile
+FROM nginx:alpine
+```
+- **Second Stage**: Uses Nginx (web server) instead of Node
+- This removes Node.js from final image (smaller size)
+
+```dockerfile
+COPY --from=builder /app/build /usr/share/nginx/html
+```
+- Copies only the built files from builder stage
+- No source code or node_modules included
+
+```dockerfile
+EXPOSE 80
+```
+- Documents that container listens on port 80
+
+```dockerfile
+CMD ["nginx", "-g", "daemon off;"]
+```
+- Starts Nginx server when container runs
+
+### Multi-Stage Build Benefits
+
+| Stage | Size | Purpose |
+|-------|------|---------|
+| **Builder** | ~1GB | Builds React app (temporary) |
+| **Runtime** | ~50MB | Runs built app with Nginx (final) |
+
+Final image is **only 50MB** instead of 1GB+ because we discard builder stage!
+
+---
+
+## 📦 Docker Compose (Optional - Advanced)
+
+Create `docker-compose.yml` for easier management:
+
+```yaml
+version: '3.8'
+
+services:
+  furnistyle-app:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: furnistyle-app
+    restart: unless-stopped
+```
+
+Run with:
+```bash
+docker-compose up -d
+```
+
+Stop with:
+```bash
+docker-compose down
+```
+
+---
+
+## 🔧 Production Deployment Checklist
+
+- [ ] Build image: `docker build -t furnistyle-ecommerce:1.0 .`
+- [ ] Test locally: `docker run -p 3000:80 furnistyle-ecommerce:1.0`
+- [ ] Push to Docker Hub (optional)
+- [ ] Deploy to cloud (AWS, Heroku, DigitalOcean, etc.)
+
+---
+
+## 🐛 Troubleshooting
+
+### Port Already in Use
+```bash
+# Use different port
+docker run -p 8080:80 furnistyle-ecommerce:1.0
+
+# Or stop other container
+docker stop <container-name>
+```
+
+### Container Exits Immediately
+```bash
+# Check logs
+docker logs furnistyle-app
+```
+
+### Clear Everything (Fresh Start)
+```bash
+docker stop furnistyle-app
+docker rm furnistyle-app
+docker rmi furnistyle-ecommerce:1.0
+```
+
+---
+
+## 📚 Key Takeaways
+
+1. **Dockerfile** = Instructions to build image
+2. **Image** = Blueprint (like a recipe)
+3. **Container** = Running instance (like cooking from recipe)
+4. **Multi-stage** = Optimizes final size
+5. **Nginx** = Serves static React files efficiently
