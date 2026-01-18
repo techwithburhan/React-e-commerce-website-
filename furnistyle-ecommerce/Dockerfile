@@ -1,34 +1,35 @@
-# Stage 1: Build Stage
-# Using official Node.js image as base
+# ---------- Stage 1: Build React App ----------
 FROM node:18-alpine AS builder
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy dependency files
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy entire project source code
+# Copy source code
 COPY . .
 
-# Build the React application for production
+# Build the app
 RUN npm run build
 
-# Stage 2: Runtime Stage
-# Using lightweight Nginx image to serve the built app
+
+# ---------- Stage 2: Serve with Nginx ----------
 FROM nginx:alpine
 
-# Copy nginx configuration (optional - for SPA routing)
-COPY nginx.conf /etc/nginx/nginx.conf
+# Remove default nginx config
+RUN rm /etc/nginx/conf.d/default.conf
 
-# Copy built application from builder stage
+# Copy custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy build output from builder stage
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Expose port 80 (default HTTP port)
+# Expose port
 EXPOSE 80
 
-# Start Nginx server
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
