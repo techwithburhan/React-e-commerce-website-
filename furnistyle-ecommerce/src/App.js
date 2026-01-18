@@ -68,9 +68,9 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
 
-            {/* ✅ PRODUCT DETAIL ROUTE */}
+            {/* ✅ FIXED: Changed from /products/:id to /product/:id */}
             <Route
-              path="/products/:id"
+              path="/product/:id"
               element={<ProductDetailPage addToCart={addToCart} />}
             />
 
