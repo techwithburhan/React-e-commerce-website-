@@ -12,11 +12,14 @@ import {
   Heart,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { products } from "../data/products";
+import axios from "axios";
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   // Hero slides data
@@ -44,27 +47,48 @@ const HomePage = () => {
     },
   ];
 
-  // Get unique categories
-  const categories = ["All", ...new Set(products.map((p) => p.category))];
+  // Fetch products from backend API
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get('http://localhost:5001/api/products');
+        
+        if (response.data.success) {
+          setProducts(response.data.data);
+          setError(null);
+        }
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setError('Failed to load products. Please try again later.');
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  // Get unique categories from products
+  const categories = products.length > 0 
+    ? ["All", ...new Set(products.map((p) => p.category))]
+    : ["All", "Living Room", "Dining Room", "Bedroom", "Office"];
 
   // Auto slide
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5001);
+    }, 5000);
 
     return () => clearInterval(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slides.length]);
 
   const handleProductClick = (id) => {
     navigate(`/product/${id}`);
   };
 
-  // ✅ This needs to be passed from App.js, for now just alert
   const handleAddToCart = (product) => {
     alert(`${product.name} added to cart!`);
-    // Note: To make this work, you need to pass addToCart prop from App.js
   };
 
   // Filter products by category
@@ -203,134 +227,137 @@ const HomePage = () => {
           ))}
         </div>
 
-        {/* FEATURED PRODUCTS GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+        {/* LOADING STATE */}
+        {loading && (
+          <div className="text-center py-20">
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+            <p className="text-gray-600 mt-4">Loading products...</p>
+          </div>
+        )}
+
+        {/* ERROR STATE */}
+        {error && !loading && (
+          <div className="text-center py-20">
+            <p className="text-red-600 text-lg mb-4">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
             >
-              {/* IMAGE CONTAINER */}
-              <div className="relative h-64 bg-gray-200 overflow-hidden cursor-pointer">
-                <img
-                  src={product.images?.[0] || product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  onClick={() => handleProductClick(product.id)}
-                  onError={(e) => {
-                    e.target.src =
-                      "https://via.placeholder.com/400x300?text=No+Image";
-                  }}
-                />
+              Retry
+            </button>
+          </div>
+        )}
 
-                {/* OVERLAY */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                  <button
-                    onClick={() => handleProductClick(product.id)}
-                    className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
-                  >
-                    Quick View
-                  </button>
-                </div>
-
-                {/* BADGES */}
-                <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                  {product.category}
-                </div>
-
-                <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-red-50 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Heart className="w-5 h-5 text-gray-600 hover:text-red-600" />
-                </button>
+        {/* FEATURED PRODUCTS GRID */}
+        {!loading && !error && (
+          <>
+            {filteredProducts.length === 0 ? (
+              <div className="text-center py-20">
+                <p className="text-gray-600 text-lg">No products found in this category.</p>
               </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {filteredProducts.map((product) => (
+                  <div
+                    key={product._id}
+                    className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                  >
+                    {/* IMAGE CONTAINER */}
+                    <div className="relative h-64 bg-gray-200 overflow-hidden cursor-pointer">
+                      <img
+                        src={product.image || "https://via.placeholder.com/400x300?text=No+Image"}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        onClick={() => handleProductClick(product._id)}
+                        onError={(e) => {
+                          e.target.src = "https://via.placeholder.com/400x300?text=No+Image";
+                        }}
+                      />
 
-              {/* PRODUCT INFO */}
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-1 text-gray-800 line-clamp-2">
-                  {product.name}
-                </h3>
+                      {/* OVERLAY */}
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                        <button
+                          onClick={() => handleProductClick(product._id)}
+                          className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
+                        >
+                          Quick View
+                        </button>
+                      </div>
 
-                <p className="text-xs text-gray-500 mb-2">{product.material}</p>
+                      {/* CATEGORY BADGE */}
+                      <div className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                        {product.category}
+                      </div>
 
-                {/* RATING */}
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
-                  <span className="text-xs text-gray-500 ml-1">(120)</span>
-                </div>
+                      {/* WISHLIST BUTTON */}
+                      <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-red-50 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <Heart className="w-5 h-5 text-gray-600 hover:text-red-600" />
+                      </button>
+                    </div>
 
-                {/* PRICE */}
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <p className="text-2xl font-bold text-blue-600">
-                      ₹{product.price}
-                    </p>
-                    <p className="text-xs text-gray-500 line-through">
-                      ₹{Math.round(product.price * 1.5)}
-                    </p>
-                  </div>
-                  <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded font-semibold">
-                    40% OFF
-                  </span>
-                </div>
+                    {/* PRODUCT INFO */}
+                    <div className="p-4">
+                      <h3 className="font-bold text-lg mb-1 text-gray-800 line-clamp-2">
+                        {product.name}
+                      </h3>
 
-                {/* COLORS */}
-                {product.colors && product.colors.length > 0 && (
-                  <div className="mb-3">
-                    <p className="text-xs text-gray-600 mb-1">Colors:</p>
-                    <div className="flex gap-2">
-                      {product.colors.slice(0, 3).map((color) => (
-                        <div
-                          key={color}
-                          className="w-5 h-5 rounded-full border-2 border-gray-300"
-                          title={color}
-                          style={{
-                            backgroundColor:
-                              color === "Black"
-                                ? "#000"
-                                : color === "White"
-                                  ? "#fff"
-                                  : color === "Gray"
-                                    ? "#999"
-                                    : color === "Blue"
-                                      ? "#3b82f6"
-                                      : color === "Brown"
-                                        ? "#8B4513"
-                                        : color === "Beige"
-                                          ? "#F5E6D3"
-                                          : "#ddd",
-                          }}
-                        />
-                      ))}
+                      <p className="text-xs text-gray-500 mb-2 line-clamp-1">
+                        {product.description}
+                      </p>
+
+                      {/* RATING */}
+                      <div className="flex items-center gap-1 mb-3">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                          />
+                        ))}
+                        <span className="text-xs text-gray-500 ml-1">(120)</span>
+                      </div>
+
+                      {/* PRICE */}
+                      <div className="flex items-center justify-between mb-4">
+                        <div>
+                          <p className="text-2xl font-bold text-blue-600">
+                            ₹{product.price}
+                          </p>
+                          <p className="text-xs text-gray-500 line-through">
+                            ₹{Math.round(product.price * 1.5)}
+                          </p>
+                        </div>
+                        <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded font-semibold">
+                          40% OFF
+                        </span>
+                      </div>
+
+                      {/* ADD TO CART */}
+                      <button
+                        onClick={() => handleAddToCart(product)}
+                        className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2"
+                      >
+                        <ShoppingCart className="w-4 h-4" />
+                        Add to Cart
+                      </button>
                     </div>
                   </div>
-                )}
+                ))}
+              </div>
+            )}
 
-                {/* ADD TO CART */}
+            {/* VIEW ALL BUTTON */}
+            {filteredProducts.length > 0 && (
+              <div className="text-center mt-12">
                 <button
-                  onClick={() => handleAddToCart(product)}
-                  className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2"
+                  onClick={() => navigate("/products")}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold transition shadow-lg"
                 >
-                  <ShoppingCart className="w-4 h-4" />
-                  Add to Cart
+                  View All Products
                 </button>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* VIEW ALL BUTTON */}
-        <div className="text-center mt-12">
-          <button
-            onClick={() => navigate("/products")}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-3 rounded-lg font-semibold transition shadow-lg"
-          >
-            View All Products
-          </button>
-        </div>
+            )}
+          </>
+        )}
       </div>
 
       {/* ================= WHY CHOOSE US ================= */}
