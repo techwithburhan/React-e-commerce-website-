@@ -42,5 +42,5 @@ Database (MongoDB)
 ## 👨‍💻 Author
 
 **Burhan**  
-GitHub: https://github.com/your-username  
+GitHub: https://github.com/techwithburhan
 LinkedIn: https://linkedin.com/in/techwithburhan
