@@ -1,0 +1,1671 @@
+[{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe1c"
+  },
+  "id": 2,
+  "name": "Velvet Accent Chair",
+  "price": 349,
+  "images": [
+    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1567538096630-e08558e0fcde?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1617364852223-75f57e78dc96?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Green",
+    "Gold",
+    "Pink"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Velvet",
+  "description": "A luxurious velvet accent chair that adds a pop of color and elegance to any room.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:00:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe1d"
+  },
+  "id": 3,
+  "name": "Minimalist Coffee Table",
+  "price": 199,
+  "images": [
+    "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1622372738946-a2a488e0259d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1577140917170-285929d05787?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Oak",
+    "Walnut",
+    "Black"
+  ],
+  "sizes": [
+    "Small",
+    "Large"
+  ],
+  "material": "Wood",
+  "description": "A sleek, low-profile coffee table designed for modern living spaces.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:05:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe1e"
+  },
+  "id": 4,
+  "name": "King Size Platform Bed",
+  "price": 899,
+  "images": [
+    "https://images.unsplash.com/photo-1505693416388-95fabece27be?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616594039964-40891a909782?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "Grey",
+    "White",
+    "Navy"
+  ],
+  "sizes": [
+    "Queen",
+    "King"
+  ],
+  "material": "Upholstered Fabric",
+  "description": "Sleep in style with this sturdy and chic platform bed frame.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:10:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe1f"
+  },
+  "id": 5,
+  "name": "Industrial Bookshelf",
+  "price": 249,
+  "images": [
+    "https://images.unsplash.com/photo-1594620302200-9a762244a156?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1597072689227-8882273e8f6a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1556036518-45f3e2313040?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black/Wood"
+  ],
+  "sizes": [
+    "3-Tier",
+    "5-Tier"
+  ],
+  "material": "Metal & Wood",
+  "description": "Open-concept industrial shelving perfect for books and decor.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:15:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe20"
+  },
+  "id": 6,
+  "name": "Mid-Century Dining Table",
+  "price": 599,
+  "images": [
+    "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1577140917170-285929d05787?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&fit=crop"
+  ],
+  "category": "Dining",
+  "colors": [
+    "Walnut",
+    "Oak"
+  ],
+  "sizes": [
+    "4-Seater",
+    "6-Seater"
+  ],
+  "material": "Solid Wood",
+  "description": "A timeless dining table featuring tapered legs and a smooth finish.",
+  "inStock": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:20:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe21"
+  },
+  "id": 7,
+  "name": "Ergonomic Office Chair",
+  "price": 299,
+  "images": [
+    "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1589384267710-7a1709819c63?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1605774337664-7a0096de6169?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black",
+    "Grey"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Mesh & Plastic",
+  "description": "Stay comfortable all day with lumbar support and breathable mesh.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:25:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe22"
+  },
+  "id": 8,
+  "name": "Modern Floor Lamp",
+  "price": 129,
+  "images": [
+    "https://images.unsplash.com/photo-1513506003011-3b03c860ad80?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1507473888900-52e1ad14db43?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?w=600&fit=crop"
+  ],
+  "category": "Lighting",
+  "colors": [
+    "Brass",
+    "Black",
+    "Silver"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Metal",
+  "description": "Illuminate your space with this sleek, arched floor lamp.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:30:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe23"
+  },
+  "id": 9,
+  "name": "Geometric Area Rug",
+  "price": 159,
+  "images": [
+    "https://images.unsplash.com/photo-1575414003591-ece8d0416c7a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Multi",
+    "Beige",
+    "Grey"
+  ],
+  "sizes": [
+    "5x7",
+    "8x10"
+  ],
+  "material": "Wool Blend",
+  "description": "Soft and durable area rug with a contemporary geometric pattern.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:35:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe24"
+  },
+  "id": 10,
+  "name": "Rustic Nightstand",
+  "price": 129,
+  "images": [
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "Distressed Wood",
+    "White"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Wood",
+  "description": "A charming rustic nightstand with ample drawer storage.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:40:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe25"
+  },
+  "id": 11,
+  "name": "Leather Recliner",
+  "price": 699,
+  "images": [
+    "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Brown",
+    "Black",
+    "Tan"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Leather",
+  "description": "Premium leather recliner with manual reclining mechanism.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:45:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe26"
+  },
+  "id": 12,
+  "name": "Glass Top Dining Table",
+  "price": 450,
+  "images": [
+    "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1578898986877-c93437651a4f?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&fit=crop"
+  ],
+  "category": "Dining",
+  "colors": [
+    "Clear/Chrome",
+    "Clear/Gold"
+  ],
+  "sizes": [
+    "Round",
+    "Rectangular"
+  ],
+  "material": "Glass & Metal",
+  "description": "Contemporary glass dining table that makes any room feel larger.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:50:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe27"
+  },
+  "id": 13,
+  "name": "Floating Wall Shelves",
+  "price": 49,
+  "images": [
+    "https://images.unsplash.com/photo-1558603668-6570496b66f8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "White",
+    "Black",
+    "Oak"
+  ],
+  "sizes": [
+    "Set of 3"
+  ],
+  "material": "MDF",
+  "description": "Minimalist floating shelves to display your favorite items.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T10:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T10:55:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe28"
+  },
+  "id": 14,
+  "name": "Upholstered Headboard",
+  "price": 180,
+  "images": [
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1617325247661-675ab4b64ae8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1540518614846-7edad32cdce8?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "Beige",
+    "Grey",
+    "Charcoal"
+  ],
+  "sizes": [
+    "Queen",
+    "King"
+  ],
+  "material": "Linen",
+  "description": "Add softness to your bedroom with this tufted headboard.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:00:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe29"
+  },
+  "id": 15,
+  "name": "Outdoor Patio Set",
+  "price": 599,
+  "images": [
+    "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1594488582061-84a16912381f?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&fit=crop"
+  ],
+  "category": "Outdoor",
+  "colors": [
+    "Brown/Beige",
+    "Black/Grey"
+  ],
+  "sizes": [
+    "4-Piece"
+  ],
+  "material": "Rattan",
+  "description": "Weather-resistant rattan patio set including sofa and table.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:05:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2a"
+  },
+  "id": 16,
+  "name": "Standing Desk",
+  "price": 399,
+  "images": [
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1504384308090-c54be3855833?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "White",
+    "Black",
+    "Maple"
+  ],
+  "sizes": [
+    "48-inch",
+    "60-inch"
+  ],
+  "material": "Steel & Particle Board",
+  "description": "Electric height-adjustable desk for a healthier workflow.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:10:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2b"
+  },
+  "id": 17,
+  "name": "Ceramic Table Lamp",
+  "price": 79,
+  "images": [
+    "https://images.unsplash.com/photo-1513506003011-3b03c860ad80?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616167817088-75b8a09b3053?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?w=600&fit=crop"
+  ],
+  "category": "Lighting",
+  "colors": [
+    "Blue",
+    "White",
+    "Terracotta"
+  ],
+  "sizes": [
+    "Small",
+    "Large"
+  ],
+  "material": "Ceramic",
+  "description": "Handcrafted ceramic lamp with a fabric shade.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:15:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2c"
+  },
+  "id": 18,
+  "name": "Round Wall Mirror",
+  "price": 110,
+  "images": [
+    "https://images.unsplash.com/photo-1618220252344-836e3e94f443?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Gold",
+    "Black"
+  ],
+  "sizes": [
+    "24-inch",
+    "30-inch"
+  ],
+  "material": "Glass & Metal",
+  "description": "Simple and elegant round mirror for entryways or bathrooms.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:20:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2d"
+  },
+  "id": 19,
+  "name": "TV Media Console",
+  "price": 299,
+  "images": [
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Walnut",
+    "Black"
+  ],
+  "sizes": [
+    "60-inch",
+    "70-inch"
+  ],
+  "material": "Wood Veneer",
+  "description": "Mid-century modern TV stand with sliding doors.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:25:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2e"
+  },
+  "id": 20,
+  "name": "Throw Pillows Set",
+  "price": 35,
+  "images": [
+    "https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1579656381226-5fc70364d50c?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1520699697851-3dc68aa3a474?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Mustard",
+    "Teal",
+    "Grey"
+  ],
+  "sizes": [
+    "18x18"
+  ],
+  "material": "Cotton",
+  "description": "Set of 2 decorative throw pillows with textured covers.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:30:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe2f"
+  },
+  "id": 21,
+  "name": "Sliding Wardrobe",
+  "price": 750,
+  "images": [
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1617325247661-675ab4b64ae8?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "White",
+    "Oak"
+  ],
+  "sizes": [
+    "Large"
+  ],
+  "material": "Engineered Wood",
+  "description": "Spacious wardrobe with mirrored sliding doors.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:35:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe30"
+  },
+  "id": 22,
+  "name": "Bar Stools Pair",
+  "price": 180,
+  "images": [
+    "https://images.unsplash.com/photo-1503602642458-232111445657?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1519947486511-4639940be434?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&fit=crop"
+  ],
+  "category": "Dining",
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "Counter Height"
+  ],
+  "material": "Metal & Wood",
+  "description": "Industrial style bar stools, perfect for kitchen islands.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:40:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe31"
+  },
+  "id": 23,
+  "name": "Bean Bag Chair",
+  "price": 89,
+  "images": [
+    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1567538096630-e08558e0fcde?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Red",
+    "Blue",
+    "Grey"
+  ],
+  "sizes": [
+    "Adult"
+  ],
+  "material": "Memory Foam",
+  "description": "Oversized bean bag chair for ultimate relaxation.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:45:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe32"
+  },
+  "id": 24,
+  "name": "Entryway Console Table",
+  "price": 149,
+  "images": [
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1577140917170-285929d05787?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1622372738946-a2a488e0259d?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Espresso",
+    "White"
+  ],
+  "sizes": [
+    "Narrow"
+  ],
+  "material": "Wood",
+  "description": "Slim console table for entryways or behind sofas.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:50:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe33"
+  },
+  "id": 25,
+  "name": "Bamboo Shoe Rack",
+  "price": 45,
+  "images": [
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&fit=crop"
+  ],
+  "category": "Storage",
+  "colors": [
+    "Natural"
+  ],
+  "sizes": [
+    "3-Tier"
+  ],
+  "material": "Bamboo",
+  "description": "Eco-friendly bamboo shoe storage organizer.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T11:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T11:55:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe34"
+  },
+  "id": 26,
+  "name": "Modern Chandelier",
+  "price": 250,
+  "images": [
+    "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513506003011-3b03c860ad80?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&fit=crop"
+  ],
+  "category": "Lighting",
+  "colors": [
+    "Gold",
+    "Black"
+  ],
+  "sizes": [
+    "6-Light"
+  ],
+  "material": "Metal & Glass",
+  "description": "Statement chandelier with a Sputnik design.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:00:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe35"
+  },
+  "id": 27,
+  "name": "L-Shape Desk",
+  "price": 220,
+  "images": [
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1504384308090-c54be3855833?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "Large"
+  ],
+  "material": "MDF",
+  "description": "Corner desk maximizing workspace efficiency.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:05:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe36"
+  },
+  "id": 28,
+  "name": "Knitted Pouf",
+  "price": 60,
+  "images": [
+    "https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1579656381226-5fc70364d50c?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1520699697851-3dc68aa3a474?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Cream",
+    "Grey",
+    "Pink"
+  ],
+  "sizes": [
+    "Round"
+  ],
+  "material": "Cotton",
+  "description": "Textured knitted pouf that doubles as a footrest or extra seat.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:10:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe37"
+  },
+  "id": 29,
+  "name": "Single Mattress",
+  "price": 199,
+  "images": [
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "White"
+  ],
+  "sizes": [
+    "Twin",
+    "Full"
+  ],
+  "material": "Memory Foam",
+  "description": "Medium-firm memory foam mattress for supportive sleep.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:15:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe38"
+  },
+  "id": 30,
+  "name": "Wall Art Canvas",
+  "price": 85,
+  "images": [
+    "https://images.unsplash.com/photo-1580136608260-4eb11f4b64fe?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1579783902614-a3fb39279c23?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Abstract Multi"
+  ],
+  "sizes": [
+    "24x36"
+  ],
+  "material": "Canvas",
+  "description": "Modern abstract canvas print to elevate your wall decor.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:20:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe39"
+  },
+  "id": 31,
+  "name": "Dressing Table",
+  "price": 280,
+  "images": [
+    "https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1618220252344-836e3e94f443?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "White",
+    "Grey"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Wood",
+  "description": "Elegant dressing table with mirror and drawer storage.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:25:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3a"
+  },
+  "id": 32,
+  "name": "Leather Ottoman",
+  "price": 120,
+  "images": [
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Brown",
+    "Black"
+  ],
+  "sizes": [
+    "Square"
+  ],
+  "material": "Leather",
+  "description": "Classic leather ottoman that works as a coffee table or seat.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:30:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3b"
+  },
+  "id": 33,
+  "name": "Kitchen Island Cart",
+  "price": 160,
+  "images": [
+    "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?w=600&fit=crop"
+  ],
+  "category": "Kitchen",
+  "colors": [
+    "White/Wood"
+  ],
+  "sizes": [
+    "Rolling"
+  ],
+  "material": "Wood & Granite",
+  "description": "Portable kitchen island with storage drawers and towel rack.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:35:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3c"
+  },
+  "id": 34,
+  "name": "Pendant Light",
+  "price": 90,
+  "images": [
+    "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513506003011-3b03c860ad80?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1524484485831-a92ffc0de63f?w=600&fit=crop"
+  ],
+  "category": "Lighting",
+  "colors": [
+    "Copper",
+    "Black"
+  ],
+  "sizes": [
+    "Single"
+  ],
+  "material": "Metal",
+  "description": "Industrial style pendant light for kitchens or dining areas.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:40:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3d"
+  },
+  "id": 35,
+  "name": "Bunk Bed",
+  "price": 450,
+  "images": [
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1616594039964-40891a909782?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "White",
+    "Grey",
+    "Navy"
+  ],
+  "sizes": [
+    "Twin over Twin"
+  ],
+  "material": "Solid Wood",
+  "description": "Space-saving bunk bed with integrated ladder.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:45:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3e"
+  },
+  "id": 36,
+  "name": "Fabric Dining Chair",
+  "price": 95,
+  "images": [
+    "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1519947486511-4639940be434?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1503602642458-232111445657?w=600&fit=crop"
+  ],
+  "category": "Dining",
+  "colors": [
+    "Grey",
+    "Beige"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Fabric & Wood",
+  "description": "Comfortable upholstered dining chair with wooden legs.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:50:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe3f"
+  },
+  "id": 37,
+  "name": "Side Table",
+  "price": 80,
+  "images": [
+    "https://images.unsplash.com/photo-1622372738946-a2a488e0259d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1577140917170-285929d05787?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "Round"
+  ],
+  "material": "Metal",
+  "description": "Versatile metal side table for drinks or books.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T12:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T12:55:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe40"
+  },
+  "id": 38,
+  "name": "File Cabinet",
+  "price": 110,
+  "images": [
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1506898667547-42e22a46e125?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "2-Drawer"
+  ],
+  "material": "Steel",
+  "description": "Secure file cabinet with lockable drawers.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:00:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe41"
+  },
+  "id": 39,
+  "name": "Futon Sofa Bed",
+  "price": 320,
+  "images": [
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1540932239986-310128078ceb?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Grey",
+    "Navy"
+  ],
+  "sizes": [
+    "Convertible"
+  ],
+  "material": "Polyester",
+  "description": "Convertible sofa bed perfect for guests.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:05:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe42"
+  },
+  "id": 40,
+  "name": "Wall Clock",
+  "price": 40,
+  "images": [
+    "https://images.unsplash.com/photo-1563861826100-9cb868c7167a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1495364141860-b0d03ecc00b1?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Black",
+    "Silver"
+  ],
+  "sizes": [
+    "12-inch"
+  ],
+  "material": "Plastic",
+  "description": "Silent non-ticking wall clock with large numbers.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:10:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe43"
+  },
+  "id": 41,
+  "name": "Patio Umbrella",
+  "price": 130,
+  "images": [
+    "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1594488582061-84a16912381f?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600&fit=crop"
+  ],
+  "category": "Outdoor",
+  "colors": [
+    "Red",
+    "Tan",
+    "Blue"
+  ],
+  "sizes": [
+    "9ft"
+  ],
+  "material": "Polyester & Aluminum",
+  "description": "Large patio umbrella with tilt function.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:15:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe44"
+  },
+  "id": 42,
+  "name": "Bath Mat Set",
+  "price": 25,
+  "images": [
+    "https://images.unsplash.com/photo-1579656381226-5fc70364d50c?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&fit=crop"
+  ],
+  "category": "Bath",
+  "colors": [
+    "White",
+    "Grey",
+    "Blue"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Microfiber",
+  "description": "Ultra-absorbent and soft non-slip bath mats.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:20:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe45"
+  },
+  "id": 43,
+  "name": "Satin Sheet Set",
+  "price": 65,
+  "images": [
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "Champagne",
+    "Silver"
+  ],
+  "sizes": [
+    "Queen",
+    "King"
+  ],
+  "material": "Satin",
+  "description": "Silky smooth satin sheets for a luxurious night's sleep.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:25:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe46"
+  },
+  "id": 44,
+  "name": "Gaming Desk",
+  "price": 230,
+  "images": [
+    "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1605774337664-7a0096de6169?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black/Red"
+  ],
+  "sizes": [
+    "55-inch"
+  ],
+  "material": "Carbon Fiber Texture",
+  "description": "Gaming desk with cable management and headset hook.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:30:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe47"
+  },
+  "id": 45,
+  "name": "Kids Bookshelf",
+  "price": 55,
+  "images": [
+    "https://images.unsplash.com/photo-1519682577862-22b62b24e491?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop"
+  ],
+  "category": "Kids",
+  "colors": [
+    "White",
+    "Pastel"
+  ],
+  "sizes": [
+    "Low Profile"
+  ],
+  "material": "Wood",
+  "description": "Accessible bookshelf designed for children's rooms.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:35:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe48"
+  },
+  "id": 46,
+  "name": "Armchair with Ottoman",
+  "price": 420,
+  "images": [
+    "https://images.unsplash.com/photo-1567538096630-e08558e0fcde?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Grey",
+    "Yellow"
+  ],
+  "sizes": [
+    "Standard"
+  ],
+  "material": "Fabric",
+  "description": "Reading chair with matching footrest ottoman.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:40:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe49"
+  },
+  "id": 47,
+  "name": "Vanity Mirror",
+  "price": 130,
+  "images": [
+    "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1618220252344-836e3e94f443?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1522771753035-4850d6343999?w=600&fit=crop"
+  ],
+  "category": "Bedroom",
+  "colors": [
+    "White",
+    "Hollywood"
+  ],
+  "sizes": [
+    "Lighted"
+  ],
+  "material": "Glass",
+  "description": "Lighted vanity mirror for professional makeup application.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:45:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe4a"
+  },
+  "id": 48,
+  "name": "Nesting Tables",
+  "price": 115,
+  "images": [
+    "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1622372738946-a2a488e0259d?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1577140917170-285929d05787?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Wood/Black"
+  ],
+  "sizes": [
+    "Set of 2"
+  ],
+  "material": "Wood & Metal",
+  "description": "Stackable nesting tables to save space.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:50:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:50:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe4b"
+  },
+  "id": 49,
+  "name": "Drafting Chair",
+  "price": 190,
+  "images": [
+    "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1589384267710-7a1709819c63?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1605774337664-7a0096de6169?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&fit=crop"
+  ],
+  "category": "Office",
+  "colors": [
+    "Black"
+  ],
+  "sizes": [
+    "Tall"
+  ],
+  "material": "Mesh",
+  "description": "Tall drafting chair with foot ring for standing desks.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T13:55:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T13:55:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe4c"
+  },
+  "id": 50,
+  "name": "Planter Stand",
+  "price": 45,
+  "images": [
+    "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1595515106969-1ce29569ff53?w=600&fit=crop"
+  ],
+  "category": "Decor",
+  "colors": [
+    "Wood",
+    "Gold"
+  ],
+  "sizes": [
+    "Mid-Century"
+  ],
+  "material": "Wood/Ceramic",
+  "description": "Stylish planter stand to showcase your indoor plants.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T14:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T14:00:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+},
+{
+  "_id": {
+    "$oid": "697522aa2bc4756e8973fe4d"
+  },
+  "id": 51,
+  "name": "Loveseat",
+  "price": 550,
+  "images": [
+    "https://images.unsplash.com/photo-1540932239986-310128078ceb?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&fit=crop",
+    "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&fit=crop"
+  ],
+  "category": "Living Room",
+  "colors": [
+    "Cream",
+    "Grey"
+  ],
+  "sizes": [
+    "2-Seater"
+  ],
+  "material": "Linen",
+  "description": "Cozy loveseat ideal for small apartments.",
+  "inStock": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-01-25T14:05:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T14:05:00.000Z"
+  },
+  "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop"
+}]

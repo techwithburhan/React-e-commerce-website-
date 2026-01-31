@@ -1,0 +1,65 @@
+version: "3.8"
+
+services:
+
+  mongodb:
+    image: mongo:latest
+    container_name: furnistyle-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    networks:
+      - furnistyle-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+
+  furnistyle-backend:
+    image: burhan503/furnistyle-backend:v1.0
+    container_name: furnistyle-backend
+    restart: always
+    ports:
+      - "5001:5001"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/furnistyle
+    networks:
+      - furnistyle-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+
+  furnistyle-frontend:
+    image: burhan503/furnistyle-frontend:v1.0
+    container_name: furnistyle-frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - furnistyle-backend
+    networks:
+      - furnistyle-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+
+volumes:
+  mongo-data:
+
+networks:
+  furnistyle-network:
