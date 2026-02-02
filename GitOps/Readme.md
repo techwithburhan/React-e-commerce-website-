@@ -125,6 +125,12 @@ sudo journalctl -u jenkins -f
 ## Password 
 <img width="918" height="272" alt="Screenshot 2026-02-02 at 9 02 34 PM" src="https://github.com/user-attachments/assets/def086f5-96d0-42a8-8488-443807397535" />
 
+## Login Screen Enter your user ID Password 
+<img width="1203" height="632" alt="Screenshot 2026-02-02 at 11 05 24 PM" src="https://github.com/user-attachments/assets/8b284d02-0510-4392-927e-1592264fdb4a" />
+
+## Click on New Idem's
+<img width="1203" height="632" alt="Screenshot 2026-02-02 at 11 07 36 PM" src="https://github.com/user-attachments/assets/5d3f435d-8c58-4bc0-9b2f-05e1a546a236" />
+
 # 🎯 Done!
 
 Jenkins is successfully installed and ready to use.
