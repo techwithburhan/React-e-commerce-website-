@@ -134,6 +134,12 @@ sudo journalctl -u jenkins -f
 ## Give a Name and select Pipeline
 <img width="1203" height="632" alt="Screenshot 2026-02-02 at 11 11 33 PM" src="https://github.com/user-attachments/assets/0ea3b846-82a9-4c8b-ac34-6e1249360d19" />
 
+## Give a discription about your project 
+<img width="1271" height="632" alt="Screenshot 2026-02-02 at 11 18 24 PM" src="https://github.com/user-attachments/assets/5e71114b-41d3-4a52-9672-9ab2565b57a6" />
+
+## Add Your GitHub Profile with Branch I Have use Here Backend-Code Branch for Testing 
+<img width="1271" height="632" alt="Screenshot 2026-02-02 at 11 22 06 PM" src="https://github.com/user-attachments/assets/321e1ed1-fee2-4e0e-963c-6c24a974a25d" />
+
 # 🎯 Done!
 
 Jenkins is successfully installed and ready to use.
