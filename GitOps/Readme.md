@@ -119,6 +119,11 @@ View logs:
 sudo journalctl -u jenkins -f
 ```
 ---
+## Access from Here 
+<img width="639" height="272" alt="Screenshot 2026-02-02 at 9 02 03 PM" src="https://github.com/user-attachments/assets/7733cee9-4048-4983-9167-0420b7aea26b" />
+
+## Password 
+<img width="918" height="272" alt="Screenshot 2026-02-02 at 9 02 34 PM" src="https://github.com/user-attachments/assets/def086f5-96d0-42a8-8488-443807397535" />
 
 # 🎯 Done!
 
