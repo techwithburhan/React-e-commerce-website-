@@ -140,6 +140,12 @@ sudo journalctl -u jenkins -f
 ## Add Your GitHub Profile with Branch I Have use Here Backend-Code Branch for Testing 
 <img width="1271" height="632" alt="Screenshot 2026-02-02 at 11 22 06 PM" src="https://github.com/user-attachments/assets/321e1ed1-fee2-4e0e-963c-6c24a974a25d" />
 
+## Enable for CICD GitHub hook trigger for GITScm polling
+<img width="1208" height="314" alt="Screenshot 2026-02-02 at 11 24 35 PM" src="https://github.com/user-attachments/assets/e3b7bfac-6a37-4428-ba78-45c20bc57f53" />
+
+## Pipeline Code Groovy
+<img width="1208" height="625" alt="Screenshot 2026-02-02 at 11 26 13 PM" src="https://github.com/user-attachments/assets/ca0c6eb3-8f1d-4635-b5f9-ad1481012bcc" />
+
 # 🎯 Done!
 
 Jenkins is successfully installed and ready to use.
