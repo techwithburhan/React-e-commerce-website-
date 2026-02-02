@@ -146,6 +146,20 @@ sudo journalctl -u jenkins -f
 ## Pipeline Code Groovy
 <img width="1208" height="625" alt="Screenshot 2026-02-02 at 11 26 13 PM" src="https://github.com/user-attachments/assets/ca0c6eb3-8f1d-4635-b5f9-ad1481012bcc" />
 
+## Code Groovy
+```shell
+pipeline {
+    agent any
+
+    stages {
+        stage("Code") {
+           steps {
+    sh 'git clone -b backend-code --single-branch https://github.com/techwithburhan/React-e-commerce-website-.git .'
+        }
+        }
+    }
+}
+```
 # 🎯 Done!
 
 Jenkins is successfully installed and ready to use.
