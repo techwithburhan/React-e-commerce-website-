@@ -370,4 +370,146 @@ When pipeline runs, it will print:
 Hello from Shared Library!
 ```
 ### 🔹 Now create a complete Pipeline using Shared Libraries
-1 First Create a gitclone libraries -> clone.groovy 
+1 First Create a gitclone libraries -> clone.groovy this is my shared lib link 
+- https://github.com/techwithburhan/Jenkins-shared-libraries.git
+
+### 🔹 This is the Pipeline which Shared Labraries 
+
+```groovy
+@Library('Shared') _
+
+pipeline {
+    agent any
+
+    options {
+        timestamps()
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    environment {
+        FRONTEND_IMAGE = "burhan503/furnistyle-frontend"
+        BACKEND_IMAGE  = "burhan503/furnistyle-backend"
+        VERSION        = "${BUILD_NUMBER}"
+    }
+
+    stages {
+
+        stage('Clone Repository') {
+            steps {
+                clone(
+                    "https://github.com/techwithburhan/React-e-commerce-website-.git",
+                    "backend-code"
+                )
+            }
+        }
+
+        stage('Build Frontend Image') {
+            steps {
+                dir('FurniStyle-FrontEnd') {
+                    docker_build(
+                        FRONTEND_IMAGE,
+                        VERSION,
+                        "."
+                    )
+                }
+            }
+        }
+
+        stage('Build Backend Image') {
+            steps {
+                dir('furnistyle-backend') {
+                    docker_build(
+                        BACKEND_IMAGE,
+                        VERSION,
+                        "."
+                    )
+                }
+            }
+        }
+
+        stage('Push Images to DockerHub') {
+            steps {
+                script {
+                    docker_push(FRONTEND_IMAGE, VERSION)
+                    docker_push(BACKEND_IMAGE, VERSION)
+                }
+            }
+        }
+
+        stage('Deploy Application') {
+            steps {
+                sh """
+                    export VERSION=${VERSION}
+                    docker compose down
+                    docker compose up -d
+                """
+            }
+        }
+
+        stage('Wait for MongoDB') {
+            steps {
+                sh '''
+                    echo "Waiting for MongoDB..."
+
+                    until docker exec furnistyle-mongo mongosh --eval "db.adminCommand('ping')" > /dev/null 2>&1; do
+                        echo "Mongo not ready..."
+                        sleep 5
+                    done
+
+                    echo "MongoDB Ready!"
+                '''
+            }
+        }
+
+        stage('Import Mongo Data') {
+            steps {
+                dir('mongo-init') {
+                    sh '''
+                        echo "Importing Products Data..."
+
+                        docker exec -i furnistyle-mongo mongoimport \
+                          --db furnistyle \
+                          --collection products \
+                          --jsonArray \
+                          --drop < furnistyle.products.json
+
+                        echo "Import Completed!"
+                    '''
+                }
+            }
+        }
+
+        stage('Cleanup Old Images') {
+            steps {
+                sh 'docker image prune -f'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "✅ Deployment + Mongo Import Successful!"
+        }
+        failure {
+            echo "❌ Pipeline Failed!"
+        }
+    }
+}
+
+```
+## Before Build 
+<img width="1543" height="772" alt="image" src="https://github.com/user-attachments/assets/eefbc7bb-900d-43f2-aa32-60d372bcd75c" />
+
+## After Build 
+<img width="1704" height="881" alt="image" src="https://github.com/user-attachments/assets/ca00f8e9-1820-4521-90ef-1445c28a7d14" />
+
+## Stage Logs (Declarative: Post Actions) 
+<img width="1704" height="253" alt="image" src="https://github.com/user-attachments/assets/7a66bf84-72c6-4d02-b64f-fedd81603ce1" />
+
+## Check on Ubuntu Terminal docker ps
+<img width="1704" height="388" alt="image" src="https://github.com/user-attachments/assets/2e40ca50-74b8-4049-b9be-7006a93a4dec" />
+
+##  Website Access on [√](http://localhost:3000/)
+<img width="1916" height="1054" alt="image" src="https://github.com/user-attachments/assets/d192da6e-29f3-4c6e-8399-479606897c0a" />
+
+
