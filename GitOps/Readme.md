@@ -273,4 +273,5 @@ pipeline {
 ```
 # 🎯 Done!
 
-Jenkins is successfully installed and ready to use.
+## Jenkins is successfully installed and ready to use.
+<img width="1705" height="832" alt="Screenshot 2026-02-21 at 1 03 34 PM" src="https://github.com/user-attachments/assets/7eb9513c-4c0c-4941-9f76-5d44a97ff62b" />
