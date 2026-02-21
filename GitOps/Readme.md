@@ -274,15 +274,98 @@ pipeline {
 # 🎯 Done!
 
 ## Jenkins is successfully installed and ready to use.
-<img width="1705" height="832" alt="Screenshot 2026-02-21 at 1 03 34 PM" src="https://github.com/user-attachments/assets/7eb9513c-4c0c-4941-9f76-5d44a97ff62b" />
 
-## Implementing Shared Libraries 
-- first create a new repo and cheate a vars folder
-<img width="941" height="677" alt="Screenshot 2026-02-22 at 1 26 15 AM" src="https://github.com/user-attachments/assets/f9d49354-0186-4109-a4bf-3106f23bc5b4" />
+<img width="1705" height="832" alt="Jenkins Setup Screenshot" src="https://github.com/user-attachments/assets/7eb9513c-4c0c-4941-9f76-5d44a97ff62b" />
 
-- create a demo file
-<img width="964" height="677" alt="Screenshot 2026-02-22 at 1 28 17 AM" src="https://github.com/user-attachments/assets/bfedfc7b-47ae-424e-8388-f4e8e3792443" />
+---
 
-- How to connect with jenkins
-- Open Jenkins > Manage Jenkins > System > find Shared Libraries
-- Global Trusted Pipeline Libraries
+## 📚 Implementing Shared Libraries
+
+### 🔹 Step 1: Create a New Repository
+
+- Create a new Git repository (e.g., `jenkins-shared-library`)
+- Create a folder named `vars`
+
+<img width="941" height="677" alt="Create Vars Folder" src="https://github.com/user-attachments/assets/f9d49354-0186-4109-a4bf-3106f23bc5b4" />
+
+Repository Structure:
+
+```
+jenkins-shared-library/
+│
+├── vars/
+│   └── demo.groovy
+│
+└── README.md
+```
+
+---
+
+### 🔹 Step 2: Create a Demo File
+
+Create a file inside `vars` folder:
+
+**File:** `vars/demo.groovy`
+
+```groovy
+def call() {
+    echo "Hello from Shared Library!"
+}
+```
+
+<img width="964" height="677" alt="Demo File Screenshot" src="https://github.com/user-attachments/assets/bfedfc7b-47ae-424e-8388-f4e8e3792443" />
+
+🔗 How to Connect with Jenkins
+1. Open Jenkins
+2. Go to **Manage Jenkins**
+3. Click on **System**
+4. Scroll down to **Global Trusted Pipeline Libraries**
+
+Add the following details:
+
+- **Name:** shared-library
+- **Default Version:** main
+- ✔️ Allow default version to be overridden
+- ✔️ Load implicitly
+- **Retrieval Method:** Modern SCM
+- **SCM:** Git
+- **Repository URL:**  
+  `https://github.com/your-username/jenkins-shared-library.git`
+
+Click **Save**.
+
+<img width="1089" height="772" alt="image" src="https://github.com/user-attachments/assets/dce6a4c9-0ae1-4a22-9308-8b654b017721" />
+
+---
+
+## 🧪 Using Shared Library in Jenkinsfile
+
+```groovy
+@Library('Shared') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Test Shared Library') {
+            steps {
+                script{
+                    hello()
+                }
+            }
+        }
+    }
+}
+
+```
+<img width="1543" height="772" alt="image" src="https://github.com/user-attachments/assets/c5957518-dd54-47fc-8cd9-8e3427fe4edb" />
+
+---
+
+# ✅ Output
+
+When pipeline runs, it will print:
+
+```
+Hello from Shared Library!
+```
