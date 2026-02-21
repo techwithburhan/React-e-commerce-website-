@@ -513,3 +513,13 @@ pipeline {
 <img width="1916" height="1054" alt="image" src="https://github.com/user-attachments/assets/d192da6e-29f3-4c6e-8399-479606897c0a" />
 
 
+# Create a FreeStyle Pipeline to Delete all running containers and  images 
+<img width="1687" height="258" alt="image" src="https://github.com/user-attachments/assets/a7a7c088-731d-4454-b860-fb3ce94e1e99" />
+
+## Execute Shell Code click on apply and click on build 
+<img width="1687" height="953" alt="image" src="https://github.com/user-attachments/assets/d1b648f6-19f7-4415-9f94-bcca12d300ed" />
+<img width="1687" height="782" alt="image" src="https://github.com/user-attachments/assets/8a766c2b-2d16-4253-99a3-7c71a7bbd859" />
+
+## Now check running conntainers 
+<img width="1687" height="782" alt="image" src="https://github.com/user-attachments/assets/abd45b41-7eea-4830-938a-834fb45a05cf" />
+
