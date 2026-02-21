@@ -1,4 +1,4 @@
-# 🚀 Jenkins Installation Guide (Ubuntu/Debian)
+<img width="964" height="677" alt="Screenshot 2026-02-22 at 1 28 17 AM" src="https://github.com/user-attachments/assets/ef332d4b-2137-4035-a866-2bb6bcddd005" /># 🚀 Jenkins Installation Guide (Ubuntu/Debian)
 
 This guide explains how to install and start Jenkins CI/CD server using apt.
 
@@ -275,3 +275,18 @@ pipeline {
 
 ## Jenkins is successfully installed and ready to use.
 <img width="1705" height="832" alt="Screenshot 2026-02-21 at 1 03 34 PM" src="https://github.com/user-attachments/assets/7eb9513c-4c0c-4941-9f76-5d44a97ff62b" />
+
+## Implementing Shared Libraries 
+- first create a new repo and cheate a vars folder
+<img width="941" height="677" alt="Screenshot 2026-02-22 at 1 26 15 AM" src="https://github.com/user-attachments/assets/f9d49354-0186-4109-a4bf-3106f23bc5b4" />
+
+- create a demo file
+<img width="964" height="677" alt="Screenshot 2026-02-22 at 1 28 17 AM" src="https://github.com/user-attachments/assets/bfedfc7b-47ae-424e-8388-f4e8e3792443" />
+
+- How to connect with jenkins
+- Open Jenkins > Manage Jenkins > System > find Shared Libraries
+- Global Trusted Pipeline Libraries
+
+
+
+ 
