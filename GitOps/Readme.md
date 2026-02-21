@@ -144,7 +144,8 @@ sudo journalctl -u jenkins -f
 <img width="1208" height="314" alt="Screenshot 2026-02-02 at 11 24 35 PM" src="https://github.com/user-attachments/assets/e3b7bfac-6a37-4428-ba78-45c20bc57f53" />
 
 ## Pipeline Code Groovy
-<img width="1208" height="625" alt="Screenshot 2026-02-02 at 11 26 13 PM" src="https://github.com/user-attachments/assets/ca0c6eb3-8f1d-4635-b5f9-ad1481012bcc" />
+<img width="1597" height="669" alt="Screenshot 2026-02-21 at 12 57 12 PM" src="https://github.com/user-attachments/assets/96a4e872-4917-4fcf-8596-7fca94ee31a5" />
+
 
 ## Code Groovy
 ```shell
