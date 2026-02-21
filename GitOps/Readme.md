@@ -151,11 +151,117 @@ sudo journalctl -u jenkins -f
 pipeline {
     agent any
 
+    options {
+        timestamps()
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    environment {
+        FRONTEND_IMAGE = "burhan503/furnistyle-frontend"
+        BACKEND_IMAGE  = "burhan503/furnistyle-backend"
+        VERSION        = "${BUILD_NUMBER}"
+    }
+
     stages {
-        stage("Code") {
-           steps {
-    sh 'git clone -b backend-code --single-branch https://github.com/techwithburhan/React-e-commerce-website-.git .'
+
+        stage('Clone Repository') {
+            steps {
+                git url: "https://github.com/techwithburhan/React-e-commerce-website-.git",
+                    branch: "backend-code"
+            }
         }
+
+        stage('Build Frontend Image') {
+            steps {
+                dir('FurniStyle-FrontEnd') {
+                    sh "docker build -t ${FRONTEND_IMAGE}:${VERSION} ."
+                }
+            }
+        }
+
+        stage('Build Backend Image') {
+            steps {
+                dir('furnistyle-backend') {
+                    sh "docker build -t ${BACKEND_IMAGE}:${VERSION} ."
+                }
+            }
+        }
+
+        stage('Push Images to DockerHub') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'dockerCred',
+                    passwordVariable: 'dockerHubPass',
+                    usernameVariable: 'dockerHubUser')]) {
+
+                    sh '''
+                        echo $dockerHubPass | docker login -u $dockerHubUser --password-stdin
+                    '''
+
+                    sh "docker push ${FRONTEND_IMAGE}:${VERSION}"
+                    sh "docker push ${BACKEND_IMAGE}:${VERSION}"
+                }
+            }
+        }
+
+        stage('Deploy Application') {
+            steps {
+                sh '''
+                    export VERSION=${VERSION}
+                    docker compose down
+                    docker compose up -d
+                '''
+            }
+        }
+
+        // ✅ WAIT FOR MONGO TO BE READY
+        stage('Wait for MongoDB') {
+            steps {
+                sh '''
+                    echo "Waiting for MongoDB..."
+
+                    until docker exec furnistyle-mongo mongosh --eval "db.adminCommand('ping')" > /dev/null 2>&1; do
+                        echo "Mongo not ready..."
+                        sleep 5
+                    done
+
+                    echo "MongoDB Ready!"
+                '''
+            }
+        }
+
+        // ✅ YOUR EXACT COMMAND IMPLEMENTED
+        stage('Import Mongo Data') {
+            steps {
+                dir('mongo-init') {
+                    sh '''
+                        echo "Importing Products Data..."
+
+                        docker exec -i furnistyle-mongo mongoimport \
+                          --db furnistyle \
+                          --collection products \
+                          --jsonArray \
+                          --drop < furnistyle.products.json
+
+                        echo "Import Completed!"
+                    '''
+                }
+            }
+        }
+
+        stage('Cleanup Old Images') {
+            steps {
+                sh 'docker image prune -f'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "✅ Deployment + Mongo Import Successful!"
+        }
+        failure {
+            echo "❌ Pipeline Failed!"
         }
     }
 }
