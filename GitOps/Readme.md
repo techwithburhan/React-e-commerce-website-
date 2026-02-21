@@ -286,7 +286,3 @@ pipeline {
 - How to connect with jenkins
 - Open Jenkins > Manage Jenkins > System > find Shared Libraries
 - Global Trusted Pipeline Libraries
-
-
-
- 
