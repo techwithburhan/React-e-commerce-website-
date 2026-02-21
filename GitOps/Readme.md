@@ -146,6 +146,10 @@ sudo journalctl -u jenkins -f
 ## Pipeline Code Groovy
 <img width="1597" height="669" alt="Screenshot 2026-02-21 at 12 57 12 PM" src="https://github.com/user-attachments/assets/96a4e872-4917-4fcf-8596-7fca94ee31a5" />
 
+## Need to added docker credentials create from docker hub 
+<img width="1440" height="669" alt="Screenshot 2026-02-21 at 1 00 16 PM" src="https://github.com/user-attachments/assets/634aeb3e-5fb0-4720-8c62-f0347f8e3f06" />
+<img width="1440" height="669" alt="Screenshot 2026-02-21 at 1 01 38 PM" src="https://github.com/user-attachments/assets/1c57f976-c718-4e45-bbe8-94a853c827ce" />
+
 
 ## Code Groovy
 ```shell
