@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: furnistyle-deployment
+  namespace: nginx
+  labels:
+    app: furnistyle-frontend-only
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: furnistyle-frontend-only
+  template:
+    metadata:
+      labels:
+        app: furnistyle-frontend-only
+    spec:
+      containers:
+        - name: furnistyle-front-only
+          image: burhan503/furnistyle-frontend:v1
+          ports:
+            - containerPort: 3000

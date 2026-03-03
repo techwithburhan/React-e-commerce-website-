@@ -1,0 +1,40 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: furnistyle-ingress
+#   namespace: nginx
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#     - host: furnistyle.local
+#       http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: furnistyle-frontend-service
+#                 port:
+#                   number: 3000
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: furnistyle-ingress
+  namespace: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: furnistyle.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: furnistyle-frontend-service
+                port:
+                  number: 3000
