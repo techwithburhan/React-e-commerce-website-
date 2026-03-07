@@ -250,7 +250,7 @@ This creates a single-node cluster named `kind` (default).
 ### Verify Cluster is Running
 
 ```bash
-kubectl cluster-info --context kind-kind
+kubectl cluster-info --context kind-techwithburhan
 ```
 
 **Expected Output:**
