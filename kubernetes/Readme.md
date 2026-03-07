@@ -255,8 +255,9 @@ kubectl cluster-info --context kind-techwithburhan
 
 **Expected Output:**
 ```
-Kubernetes control plane is running at https://127.0.0.1:xxxxx
-CoreDNS is running at https://127.0.0.1:xxxxx/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+burhan@Burhans-MacBook-Air kubernetes % kubectl cluster-info --context kind-techwithburhan
+Kubernetes control plane is running at https://127.0.0.1:61970
+CoreDNS is running at https://127.0.0.1:61970/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
 
 ### Check Nodes
