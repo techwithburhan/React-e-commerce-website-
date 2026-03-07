@@ -278,7 +278,7 @@ kind-control-plane   Ready    control-plane   1m    v1.31.2
 ### Create Cluster with Custom Name
 
 ```bash
-kind create cluster --name my-cluster
+kind create cluster --name techwithburhan --config kind-config.yaml
 ```
 
 ### List All Clusters
